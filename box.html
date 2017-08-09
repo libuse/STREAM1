@@ -9,28 +9,38 @@
         .box {
             width: 300px;
             height: 300px;
-            background-color: #81BBC9;
             margin: 50px;
-            border: 10px solid #000;
+            border: 40px solid #000;
         }
         #box1 {
-            border-style: dashed;
+            background-color: #81BBC9;
+            border-style:dashed;
         }
 
         #box2 {
             border-style: dashed;
-            border-radius: 200px;
+            border-radius: 40px;
         }
 
         #box3 {
+            border-radius: 200px;
             border-width: solid;
+            border-color: red;
+        }
+        #lemon {
+            background-color: yellow;
+            border: none;
+            border-radius: 15px 200px 40px 200px;
         }
     </style>
 </head>
 <body>
     <div class="box"></div>
+    <hr>
     <div class="box" id="box1"></div>
     <div class="box" id="box2"></div>
-    <div class="box" id="box3"></div>
+    <div class="box" id="box3"></div>`
+    <hr>
+    <div class="box" id="lemon"></div>`    
 </body>
 </html>
