@@ -12,34 +12,37 @@
         }
 
         .box {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            display: block;
             margin-right: auto;
             margin-left: auto;
             margin-bottom: 10px;
             width: 100%;
             background-color: #81BBC9;
             border-radius: 10px;
-            display: block;
-            border-width: medium;
-            text-align: center;
-            padding-top:50px;
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
         
         #header {
             font-size: 1.5em;
-            height: 100px;
+            height: 150px;
         }
 
         #sidebar {
             width: 30%;
-            height: 270px;
+            height: 320px;
             float: left;
+            overflow: auto;
         }
 
         #content {
             width: 69%;
-            height: 270px;
-            float:right;
+            height: 320px;
+            float: right;
+            overflow: auto;
         }
 
         #footer {
@@ -47,14 +50,34 @@
             clear:both;
             margin-bottom:0;
         }
+
+        h1{
+            text-align:center;
+        }
+
+        p{
+            text-align:left;
+            padding-bottom:15px;
+        }
     </style>
 </head>
 <body>
     <div id="container">
-        <div id="header" class="box">Header</div>
-        <div id="sidebar" class="box">Sidebar</div>
-        <div id="content" class="box">Content</div>
-        <div id="footer" class="box">Footer</div>
+        <div id="header" class="box"><h1>Header</h1></div>
+        <div id="sidebar" class="box"><h2>Sidebar</h2>
+            <p>Praesent porta felis ex. In semper tellus id pellentesque lacinia. Maecenas nec libero nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec a vestibulum libero. Integer maximus faucibus volutpat. Nunc nisi libero, vulputate a lectus sed, auctor feugiat orci. Nunc malesuada eleifend pharetra.
+               <br />Donec fringilla lacus vel dolor posuere malesuada. Aenean eget augue pharetra odio aliquet tempor eget non lacus. Praesent eu pretium tortor. Nullam vestibulum, eros mollis suscipit rhoncus, nisl libero tincidunt neque, sit amet faucibus est risus eget nisi. Ut sem dolor, pulvinar in elementum quis, congue a leo. Donec ullamcorper dapibus ligula, ac hendrerit nisi euismod id. Sed eu odio porta, congue velit at, finibus massa. Duis interdum, leo vitae vestibulum mattis, ante nisl maximus lorem, quis blandit velit eros in nisl. Morbi ac elit in leo finibus viverra in non enim. Sed ut mattis nunc, ac fermentum massa. Duis finibus purus quis neque sollicitudin, et sodales metus tristique. Cras a libero vitae nunc maximus vehicula nec ut nisi. Vestibulum rutrum ex ut mollis vestibulum. Aenean vel tristique odio, quis vestibulum arcu. Etiam ac urna eget urna sodales dignissim. Duis blandit lacinia massa eget consectetur.
+            </p>
+        </ul>
+        </div>
+        <div id="content" class="box">
+            <h1>Content</h1>
+            <p>Cras vitae purus massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut non sem non sapien maximus tincidunt. Maecenas et blandit turpis. Morbi nisl mi, lacinia at euismod ut, pretium sit amet sapien. Mauris a felis in ligula ultricies dictum. Etiam vestibulum lectus neque, vitae tempus tellus scelerisque rutrum. Duis congue eleifend ligula, quis euismod orci eleifend vitae. Ut feugiat nulla sed leo molestie, sed pulvinar elit luctus. Sed metus justo, dapibus nec velit et, sollicitudin luctus ligula. Nulla felis risus, pretium a efficitur non, condimentum ac tellus.
+                <br />Suspendisse potenti. Pellentesque eleifend pellentesque molestie. Ut fringilla id purus sit amet efficitur. Aenean sit amet interdum urna. Mauris maximus tellus eu metus fermentum, id tincidunt eros pulvinar. Ut malesuada ac nunc vitae suscipit. Fusce non nisl nec lacus fermentum accumsan. Aenean nisi elit, tincidunt et pharetra et, pellentesque sit amet mauris. Pellentesque sit amet enim fermentum, tempus diam et, aliquet odio. Donec egestas non nunc vel accumsan. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ligula ligula, dapibus vel venenatis quis, imperdiet ac tellus. Cras sit amet eros ligula. Fusce ultrices, enim vitae vulputate efficitur, lorem ipsum laoreet mi, et dignissim enim purus a nisl. Duis id ultricies risus. Vivamus egestas, risus nec ultrices fringilla, libero tortor pharetra massa, ut convallis eros nulla sit amet justo.
+                <br />Aliquam aliquet varius dapibus. Ut sagittis aliquet ex eu bibendum. Maecenas turpis neque, egestas rhoncus porta vel, porttitor ultrices libero. Cras laoreet aliquet felis ut facilisis. Sed nec tristique nunc. Proin vel porta mauris. Aliquam non orci vel nunc ultricies rhoncus id dictum ante. Phasellus sit amet cursus nulla. Duis sed neque finibus, vulputate mi in, cursus velit. Duis in iaculis turpis, eu condimentum urna.
+                <br />Praesent porta felis ex. In semper tellus id pellentesque lacinia. Maecenas nec libero nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec a vestibulum libero. Integer maximus faucibus volutpat. Nunc nisi libero, vulputate a lectus sed, auctor feugiat orci. Nunc malesuada eleifend pharetra.
+        </div>
+        <div id="footer" class="box"><h2>Footer</h2></div>
     </div>
 </body>
 </html>
