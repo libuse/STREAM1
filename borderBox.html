@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Border Box</title>
+    <style type="text/css">
+        #container {
+            width: 960px;
+            margin-right: auto;
+            margin-left: auto;
+            border: 1px solid black;
+        }
+
+        .box {
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 10px;
+            width: 100%;
+            background-color: #81BBC9;
+            border-radius: 10px;
+            display: block;
+            border-width: medium;
+            text-align: center;
+            padding-top:50px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        #header {
+            font-size: 1.5em;
+            height: 100px;
+        }
+
+        #sidebar {
+            width: 30%;
+            height: 270px;
+            float: left;
+        }
+
+        #content {
+            width: 69%;
+            height: 270px;
+            float:right;
+        }
+
+        #footer {
+            height: 100px;
+            clear:both;
+            margin-bottom:0;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header" class="box">Header</div>
+        <div id="sidebar" class="box">Sidebar</div>
+        <div id="content" class="box">Content</div>
+        <div id="footer" class="box">Footer</div>
+    </div>
+</body>
+</html>
