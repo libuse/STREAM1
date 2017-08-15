@@ -1,37 +1,58 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Display Properties</title>
     <style type="text/css">
         #container {
-            margin-right: auto;
-            margin-left: auto;
             width: 960px;
-            background-color: #AA4639;
-            padding: 10px;
-            border-radius: 10px;
-            font-size: 0px;
+            margin:auto;
+            border: 1px solid black;
         }
 
         .box {
-            width: 220px;
-            height: 150px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 10px;
+            width: 100%;
             background-color: #81BBC9;
             border-radius: 10px;
-            margin: 10px;
-            display: inline-block;
+            display: block;
+            border-width: medium;
+            text-align: center;
+            padding-top:50px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        #header {
+            font-size: 1.5em;
+            height: 100px;
+        }
+
+        #sidebar {
+            width: 30%;
+            height: 270px;
+            float: left;
+        }
+
+        #content {
+            width: 69%;
+            height: 270px;
+            float:right;
+        }
+
+        #footer {
+            height: 100px;
+            clear:both;
         }
     </style>
 </head>
 <body>
     <div id="container">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div id="header" class="box">Header</div>
+        <div id="sidebar" class="box">Sidebar</div>
+        <div id="content" class="box">Content</div>
+        <div id="footer" class="box">Footer</div>
     </div>
 </body>
 </html>
